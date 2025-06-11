@@ -22,27 +22,35 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.COBBLED_GRANITE);
                         output.accept(ModBlocks.COBBLED_GRANITE_STAIRS);
                         output.accept(ModBlocks.COBBLED_GRANITE_SLAB);
+                        output.accept(ModBlocks.COBBLED_GRANITE_WALL);
                         output.accept(ModBlocks.COBBLED_DIORITE);
                         output.accept(ModBlocks.COBBLED_DIORITE_STAIRS);
                         output.accept(ModBlocks.COBBLED_DIORITE_SLAB);
+                        output.accept(ModBlocks.COBBLED_DIORITE_WALL);
                         output.accept(ModBlocks.COBBLED_ANDESITE);
                         output.accept(ModBlocks.COBBLED_ANDESITE_STAIRS);
                         output.accept(ModBlocks.COBBLED_ANDESITE_SLAB);
+                        output.accept(ModBlocks.COBBLED_ANDESITE_WALL);
                         output.accept(ModBlocks.COBBLED_CALCITE);
                         output.accept(ModBlocks.COBBLED_CALCITE_STAIRS);
                         output.accept(ModBlocks.COBBLED_CALCITE_SLAB);
+                        output.accept(ModBlocks.COBBLED_CALCITE_WALL);
                         output.accept(ModBlocks.COBBLED_TUFF);
                         output.accept(ModBlocks.COBBLED_TUFF_STAIRS);
                         output.accept(ModBlocks.COBBLED_TUFF_SLAB);
+                        output.accept(ModBlocks.COBBLED_TUFF_WALL);
                         output.accept(ModBlocks.COBBLED_DRIPSTONE);
                         output.accept(ModBlocks.COBBLED_DRIPSTONE_STAIRS);
                         output.accept(ModBlocks.COBBLED_DRIPSTONE_SLAB);
+                        output.accept(ModBlocks.COBBLED_DRIPSTONE_WALL);
                         output.accept(ModBlocks.COBBLED_BASALT);
                         output.accept(ModBlocks.COBBLED_BASALT_STAIRS);
                         output.accept(ModBlocks.COBBLED_BASALT_SLAB);
+                        output.accept(ModBlocks.COBBLED_BASALT_WALL);
                         output.accept(ModBlocks.COBBLED_END_STONE);
                         output.accept(ModBlocks.COBBLED_END_STONE_STAIRS);
                         output.accept(ModBlocks.COBBLED_END_STONE_SLAB);
+                        output.accept(ModBlocks.COBBLED_END_STONE_WALL);
                     }).build());
 
     public static void register(IEventBus eventBus) {

@@ -58,6 +58,15 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(ModBlocks.COBBLED_END_STONE_STAIRS.get());
         add(ModBlocks.COBBLED_END_STONE_SLAB.get(),
                 block -> createSlabItemTable(ModBlocks.COBBLED_END_STONE_SLAB.get()));
+
+        dropSelf(ModBlocks.COBBLED_GRANITE_WALL.get());
+        dropSelf(ModBlocks.COBBLED_DIORITE_WALL.get());
+        dropSelf(ModBlocks.COBBLED_ANDESITE_WALL.get());
+        dropSelf(ModBlocks.COBBLED_CALCITE_WALL.get());
+        dropSelf(ModBlocks.COBBLED_TUFF_WALL.get());
+        dropSelf(ModBlocks.COBBLED_DRIPSTONE_WALL.get());
+        dropSelf(ModBlocks.COBBLED_BASALT_WALL.get());
+        dropSelf(ModBlocks.COBBLED_END_STONE_WALL.get());
     }
 
     @Override

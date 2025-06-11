@@ -66,6 +66,15 @@ public class ModBlockStateProvider extends BlockStateProvider {
         slabBlock(ModBlocks.COBBLED_END_STONE_SLAB.get(), blockTexture(ModBlocks.COBBLED_END_STONE.get()), blockTexture(ModBlocks.COBBLED_END_STONE.get()));
         blockItem(ModBlocks.COBBLED_END_STONE_SLAB);
 
+        wallBlock(ModBlocks.COBBLED_GRANITE_WALL.get(), blockTexture(ModBlocks.COBBLED_GRANITE.get()));
+        wallBlock(ModBlocks.COBBLED_DIORITE_WALL.get(), blockTexture(ModBlocks.COBBLED_DIORITE.get()));
+        wallBlock(ModBlocks.COBBLED_ANDESITE_WALL.get(), blockTexture(ModBlocks.COBBLED_ANDESITE.get()));
+        wallBlock(ModBlocks.COBBLED_CALCITE_WALL.get(), blockTexture(ModBlocks.COBBLED_CALCITE.get()));
+        wallBlock(ModBlocks.COBBLED_TUFF_WALL.get(), blockTexture(ModBlocks.COBBLED_TUFF.get()));
+        wallBlock(ModBlocks.COBBLED_DRIPSTONE_WALL.get(), blockTexture(ModBlocks.COBBLED_DRIPSTONE.get()));
+        wallBlock(ModBlocks.COBBLED_BASALT_WALL.get(), blockTexture(ModBlocks.COBBLED_BASALT.get()));
+        wallBlock(ModBlocks.COBBLED_END_STONE_WALL.get(), blockTexture(ModBlocks.COBBLED_END_STONE.get()));
+
     }
 
     private void blockWithItem(DeferredBlock<?> deferredBlock) {

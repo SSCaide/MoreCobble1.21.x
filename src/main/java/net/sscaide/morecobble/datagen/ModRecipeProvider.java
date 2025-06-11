@@ -41,8 +41,10 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
     protected static void cobble(RecipeOutput recipeOutput, ItemLike block, ItemLike smoothBlock) {
         ResourceLocation theSlab = ResourceLocation.fromNamespaceAndPath(MoreCobble.MOD_ID, getItemName(block) + "_slab");
         ResourceLocation theStair = ResourceLocation.fromNamespaceAndPath(MoreCobble.MOD_ID, getItemName(block) + "_stairs");
+        ResourceLocation theWall = ResourceLocation.fromNamespaceAndPath(MoreCobble.MOD_ID, getItemName(block) + "_wall");
         ItemLike slab = BuiltInRegistries.ITEM.get(theSlab);
         ItemLike stair = BuiltInRegistries.ITEM.get(theStair);
+        ItemLike wall = BuiltInRegistries.ITEM.get(theWall);
 
         ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, slab, 6)
                 .pattern("AAA")
@@ -58,14 +60,13 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .group("cobblestone_stairs")
                 .unlockedBy("has_" + getItemName(block), has(block))
                 .save(recipeOutput);
-        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, stair, 4)
-                .pattern("  A")
-                .pattern(" AA")
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, wall, 6)
+                .pattern("AAA")
                 .pattern("AAA")
                 .define('A', block)
-                .group("cobblestone_stairs")
+                .group("cobblestone_walls")
                 .unlockedBy("has_" + getItemName(block), has(block))
-                .save(recipeOutput, theStair + "_2");
+                .save(recipeOutput);
         List<ItemLike> SMELT = List.of(block);
         oreCooking(recipeOutput, RecipeSerializer.SMELTING_RECIPE, SmeltingRecipe::new, SMELT, RecipeCategory.BUILDING_BLOCKS, smoothBlock, 0.0f, 200, getItemName(smoothBlock), "_from_smelting_cobble");
     }

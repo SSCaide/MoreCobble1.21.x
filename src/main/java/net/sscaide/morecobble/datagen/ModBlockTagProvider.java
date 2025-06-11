@@ -44,6 +44,36 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(ModBlocks.COBBLED_END_STONE.get())
                 .add(ModBlocks.COBBLED_END_STONE_STAIRS.get())
                 .add(ModBlocks.COBBLED_END_STONE_SLAB.get())
+
+                .add(ModBlocks.COBBLED_GRANITE_WALL.get())
+                .add(ModBlocks.COBBLED_DIORITE_WALL.get())
+                .add(ModBlocks.COBBLED_ANDESITE_WALL.get())
+                .add(ModBlocks.COBBLED_CALCITE_WALL.get())
+                .add(ModBlocks.COBBLED_TUFF_WALL.get())
+                .add(ModBlocks.COBBLED_DRIPSTONE_WALL.get())
+                .add(ModBlocks.COBBLED_BASALT_WALL.get())
+                .add(ModBlocks.COBBLED_END_STONE_WALL.get())
+        ;
+
+        tag(BlockTags.WALLS)
+                .add(ModBlocks.COBBLED_GRANITE_WALL.get())
+                .add(ModBlocks.COBBLED_DIORITE_WALL.get())
+                .add(ModBlocks.COBBLED_ANDESITE_WALL.get())
+                .add(ModBlocks.COBBLED_CALCITE_WALL.get())
+                .add(ModBlocks.COBBLED_TUFF_WALL.get())
+                .add(ModBlocks.COBBLED_DRIPSTONE_WALL.get())
+                .add(ModBlocks.COBBLED_BASALT_WALL.get())
+                .add(ModBlocks.COBBLED_END_STONE_WALL.get())
+        ;
+        tag(BlockTags.FENCES)
+                .add(ModBlocks.COBBLED_GRANITE_WALL.get())
+                .add(ModBlocks.COBBLED_DIORITE_WALL.get())
+                .add(ModBlocks.COBBLED_ANDESITE_WALL.get())
+                .add(ModBlocks.COBBLED_CALCITE_WALL.get())
+                .add(ModBlocks.COBBLED_TUFF_WALL.get())
+                .add(ModBlocks.COBBLED_DRIPSTONE_WALL.get())
+                .add(ModBlocks.COBBLED_BASALT_WALL.get())
+                .add(ModBlocks.COBBLED_END_STONE_WALL.get())
         ;
     }
 }

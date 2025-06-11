@@ -3,10 +3,7 @@ package net.sscaide.morecobble.block;
 import net.minecraft.util.ColorRGBA;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.SlabBlock;
-import net.minecraft.world.level.block.SoundType;
-import net.minecraft.world.level.block.StairBlock;
+import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
@@ -124,6 +121,25 @@ public class ModBlocks {
             () -> new SlabBlock(BlockBehaviour.Properties.of()
                     .strength(3.5f).requiresCorrectToolForDrops().explosionResistance(9f)
                     .sound(SoundType.STONE)));
+
+    public static final DeferredBlock<WallBlock> COBBLED_GRANITE_WALL = registerBlock("cobbled_granite_wall",
+            () -> new WallBlock(BlockBehaviour.Properties.ofFullCopy(ModBlocks.COBBLED_GRANITE.get())));
+    public static final DeferredBlock<WallBlock> COBBLED_DIORITE_WALL = registerBlock("cobbled_diorite_wall",
+            () -> new WallBlock(BlockBehaviour.Properties.ofFullCopy(ModBlocks.COBBLED_DIORITE.get())));
+    public static final DeferredBlock<WallBlock> COBBLED_ANDESITE_WALL = registerBlock("cobbled_andesite_wall",
+            () -> new WallBlock(BlockBehaviour.Properties.ofFullCopy(ModBlocks.COBBLED_ANDESITE.get())));
+
+    public static final DeferredBlock<WallBlock> COBBLED_CALCITE_WALL = registerBlock("cobbled_calcite_wall",
+            () -> new WallBlock(BlockBehaviour.Properties.ofFullCopy(ModBlocks.COBBLED_CALCITE.get())));
+    public static final DeferredBlock<WallBlock> COBBLED_TUFF_WALL = registerBlock("cobbled_tuff_wall",
+            () -> new WallBlock(BlockBehaviour.Properties.ofFullCopy(ModBlocks.COBBLED_TUFF.get())));
+    public static final DeferredBlock<WallBlock> COBBLED_DRIPSTONE_WALL = registerBlock("cobbled_dripstone_wall",
+            () -> new WallBlock(BlockBehaviour.Properties.ofFullCopy(ModBlocks.COBBLED_DRIPSTONE.get())));
+
+    public static final DeferredBlock<WallBlock> COBBLED_BASALT_WALL = registerBlock("cobbled_basalt_wall",
+            () -> new WallBlock(BlockBehaviour.Properties.ofFullCopy(ModBlocks.COBBLED_BASALT.get())));
+    public static final DeferredBlock<WallBlock> COBBLED_END_STONE_WALL = registerBlock("cobbled_end_stone_wall",
+            () -> new WallBlock(BlockBehaviour.Properties.ofFullCopy(ModBlocks.COBBLED_END_STONE.get())));
 
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {

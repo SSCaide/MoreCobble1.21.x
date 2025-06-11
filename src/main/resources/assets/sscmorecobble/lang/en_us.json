@@ -24,5 +24,19 @@
   "block.sscmorecobble.cobbled_end_stone_stairs": "Cobbled End Stone Stairs",
   "block.sscmorecobble.cobbled_end_stone_slab": "Cobbled End Stone Slab",
 
+  "block.sscmorecobble.cobbled_sandstone_wall": "Cobbled Sandstone Wall",
+  "block.sscmorecobble.cobbled_red_sandstone_wall": "Cobbled Red Sandstone Wall",
+  "block.sscmorecobble.cobbled_white_sandstone_wall": "Cobbled White Sandstone Wall",
+  "block.sscmorecobble.cobbled_granite_wall": "Cobbled Granite Wall",
+  "block.sscmorecobble.cobbled_diorite_wall": "Cobbled Diorite Wall",
+  "block.sscmorecobble.cobbled_andesite_wall": "Cobbled Andesite Wall",
+  "block.sscmorecobble.cobbled_calcite_wall": "Cobbled Calcite Wall",
+  "block.sscmorecobble.cobbled_tuff_wall": "Cobbled Tuff Wall",
+  "block.sscmorecobble.cobbled_dripstone_wall": "Cobbled Dripstone Wall",
+  "block.sscmorecobble.cobbled_netherrack_wall": "Cobbled Netherrack Wall",
+  "block.sscmorecobble.cobbled_blackstone_wall": "Cobbled Blackstone Wall",
+  "block.sscmorecobble.cobbled_basalt_wall": "Cobbled Basalt Wall",
+  "block.sscmorecobble.cobbled_end_stone_wall": "Cobbled End Stone Wall",
+
   "creativetab.sscmorecobble.more_cobble": "More Cobble"
 }
